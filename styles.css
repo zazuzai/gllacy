@@ -19,6 +19,7 @@ ul {
 
 a {
     text-decoration: none;
+    cursor: pointer;
     color: var(--font-color-dark);
 }
 
@@ -53,6 +54,36 @@ body {
       padding-top: 24px;
       background-color: var(--main-bg-color-first);
       color: var(--font-color-dark);
+      line-height: 20px;
   }
+
+  .header-navigation-list {
+      display: flex;
+      margin-left: 16px;
+  }
+
+  .dropdown-catalog {
+      display: none;
+  }
+
+  .navigation-link {
+      padding: 8px 16px;
+  }
+
+  .navigation-link:hover {
+      background-color: rgba(252, 252, 252, 0.5);
+      border-radius: 26px;
+  }
+
+  .navigation-link:focus-visible {
+    background-color: rgba(252, 252, 252, 0.5);
+    border-radius: 26px;
+    outline: 2px solid #2d3440;
+}
+
+.navigation-link:active {
+    background-color: #fcfcfc;
+    border-radius: 26px;
+}
 
   
