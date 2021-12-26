@@ -10,6 +10,9 @@
     --font-color-dark: #2d3440;
     --font-color-light: #565c66;
 
+    --margin-bottom-ext: 80px;
+    --margin-bottom-inn: 56px;
+
 }
 
 ul {
@@ -21,6 +24,10 @@ a {
     text-decoration: none;
     cursor: pointer;
     color: var(--font-color-dark);
+}
+
+h3, h4, p {
+    margin: 0;
 }
 
 .visually-hidden {
@@ -37,7 +44,7 @@ a {
 body {
     margin: 0;
     min-width: 1170px;
-    min-height: 100%;
+    min-height: 100vh;
     font-family: var(--font-primary);
     font-weight: var(--font-weight-primary);
     color: var(--font-color-light);
@@ -211,7 +218,7 @@ body {
 
 .search-popup {
     position: absolute;
-    display: block;
+    display: none;
     top: 75px;
     right: 22%;
     width: 356px;
@@ -282,5 +289,204 @@ body {
     background-image: url(img/header/basket-full.svg);
     background-repeat: no-repeat;
 }
+
+.slider-item {
+    display: grid;
+    grid-template-columns: 540px 350px 280px;
+    grid-template-rows: 1fr 25px;
+    padding-top: 40px;
+    margin-bottom: var(--margin-bottom-ext);
+    
+}
+
+.slider-item-order {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    color: var(--font-color-dark);
+    padding-left: 70px;
+}
+
+.slider-item-name {
+    margin: 0;
+    padding-top: 135px;
+
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 46px;
+    
+}
+
+.slider-item-dscrpt {
+    margin-top: 24px;
+    margin-bottom: 48px;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.slider-order-btn
+
+.slider-img-container {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    width: 312px;
+    justify-self: center;
+    background-image: url(img/slider/slider-1-background.png);
+    background-position: center;
+    background-repeat: no-repeat;  
+}
+
+.slider-img {
+    height: 507px;
+    width: 306px;
+    
+    
+}
+
+
+
+
+.slider-pgn-socials {
+    grid-row: 2 / 3;
+    grid-column: 1 / 4;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.slider-pgn {
+    display: flex;
+}
+
+.slider-socials-list {
+    display: flex;
+}
+
+/* special-offer */
+
+.text-promo {
+    margin-bottom: var(--margin-bottom-inn);
+
+    color: var(--font-color-dark);
+    font-size: 32px;
+    line-height: 46px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.gifts {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+
+    color: var(--font-color-dark);
+    margin-bottom: var(--margin-bottom-ext);
+}
+
+
+.gift-offer {
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-bottom: 40px;
+
+    background-color: #ff7799;
+    border-radius: 16px;
+
+}
+
+.gift-slogan {
+    margin-bottom: 18px;
+
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+}
+
+.gift-dscrpt {
+    margin-bottom: 36px;
+}
+.btn-primary {
+    padding: 12px 32px;
+    background-color: #fcfcfc;
+    border: 0;
+    border-radius: 26px;
+    outline: 4px solid rgba(252, 252, 252, 0.4);
+}
+
+.btn-text {
+    color: var(--font-color-dark);
+    font-weight: 700;
+    line-height: 22px;
+}
+
+.gift-raspberry {
+    position: relative;
+}
+
+.gift-raspberry::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 181px;
+    height: 240px;
+    top: 28px;
+    right: 15px;
+    background-image: url(img/special-offer/raspearry-gift.png);
+    background-repeat: no-repeat;
+}
+
+.gift-marshmallow {
+    position: relative;
+}
+
+.gift-marshmallow::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 232px;
+    height: 249px;
+    top: 19px;
+    right: 7px;
+    background-image: url(img/special-offer/marshmallow-gift.png);
+    background-repeat: no-repeat;
+}
+
+/* about */
+
+.about-background {
+    padding: 24px;
+    border-radius: 16px;
+    background-image: url(img/about/about-background.png);
+}
+
+.about-wrapper {
+    padding: 56px 40px;
+
+    background-color: #fcfcfc;
+    border-radius: 16px;
+}
+
+.about-wrapper h3 {
+    margin-bottom: var(--margin-bottom-inn);
+
+    color: var(--font-color-dark);
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 46px;
+    text-align: center;
+}
+
+.advantages-list {
+    display: grid;
+    grid-template-columns: repeat(2, 506px);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 30px;
+    row-gap: 40px;
+
+}
+
+.advantage1 {
+    
+}
+
 
   
