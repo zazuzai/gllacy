@@ -18,12 +18,17 @@
 ul {
     padding-inline-start: 0;
     list-style-type: none;
+    margin: 0;
 }
 
 a {
     text-decoration: none;
     cursor: pointer;
     color: var(--font-color-dark);
+}
+
+button {
+    cursor: pointer;
 }
 
 h3, h4, p {
@@ -453,9 +458,11 @@ body {
 /* about */
 
 .about-background {
+    margin-bottom: var(--margin-bottom-ext);
     padding: 24px;
     border-radius: 16px;
     background-image: url(img/about/about-background.png);
+    background-repeat: no-repeat;
 }
 
 .about-wrapper {
@@ -478,14 +485,99 @@ body {
 .advantages-list {
     display: grid;
     grid-template-columns: repeat(2, 506px);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(auto-fill, minmax(66px, 1fr));
     column-gap: 30px;
     row-gap: 40px;
 
 }
 
-.advantage1 {
-    
+.advantage {
+    background-repeat: no-repeat;
+    padding-left: 64px;
+}
+
+.advantage1{
+    background-image: url(img/about/icecream.svg); 
+}
+
+.advantage2 {
+    background-image: url(img/about/milk.svg);
+}
+
+.advantage3 {
+    background-image: url(img/about/leaf.svg);
+}
+
+.advantage4 {
+    background-image: url(img/about/temp.svg);
+}
+
+
+/* popular */
+
+.catalog-prev-wrapper .text-promo {
+    margin-bottom: 107px;
+}
+
+.popular-cards-wrapper {
+   display: grid;
+   grid-template-columns: repeat(4, 270px);
+   column-gap: 30px;
+   row-gap: 80px;
+
+   margin-bottom: var(--margin-bottom-ext);
+}
+
+
+
+.popular-card {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 24px;
+
+    text-align: center;
+    border-radius: 8px;
+    background-color: #fcfcfc;
+}
+
+
+
+.popular-card-img {
+    margin-top: -51px;
+    width: 168px;
+
+}
+
+.popular-card h5, .popular-price {
+
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    color: var(--font-color-dark);
+}
+
+.popular-card h5 {
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.popular-descrpt {
+    margin-bottom: 16px;
+}
+
+.popular-price-btn {
+    display: flex;
+    justify-content: space-between;
+}
+
+.order-btn {
+    width: 30px;
+    height: 30px;
+    margin-left: 16px;
+    border-radius: 50%;
+    background-color: #ff2f64;
+    border: solid 2px #ff2f64;
+    background-position: center;
 }
 
 
