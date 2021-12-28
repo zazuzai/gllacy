@@ -303,13 +303,58 @@
                         <form class="newsletter" action="https://echo.htmlacademy.ru/" method="post">
                             <label class="visually-hidden" for="newsletter-input">Введите ваш адрес</label>
                             <input name="newsletter-input" id="newsletter-input" type="email" class="input-main" placeholder="email@example.com" required>
-                            <button type="submit" class="btn-primary newsletter-btn">
-                                <span class="newsletter-btn-text">Отправить</span>
+                            <button type="submit" class="btn-primary pink-btn">
+                                <span class="pink-btn-text">Отправить</span>
                             </button>
                         </form>
                     </div>
                 </div>
             </div>
+            <section class="delivery">
+                <div class="delivery-dscrpt">
+                    <h2>Доставка любимого <br>
+                        мороженого на дом</h2>
+                    <p>Хочется полакомиться любимым дессертом, <br>
+                        но нет времени съездить в магазин? Закажите <br>
+                        доставку мороженого на дом, и курьер <br>
+                        привезёт вам ваш заказ в течение часа!</p> 
+                </div>
+                <div class="order-form-wrapper">
+                    <h3 class="visually-hidden">Форма заказа.</h3>
+                    <p class="order-dscrpt">Укажите адрес и дату доставки, и мы свяжемся <br>
+                        с вами, чтобы подтвердить заказ.</p>
+                    <form class="order-form" method="post" action="https://echo.htmlacademy.ru/">
+                        <div class="date-wrapper">
+                            <div class="date-title">
+                                <label class="date" for="date-input">Дата</label>
+                                <button class="info-btn date-info-btn" type="button"></button>
+                            </div>
+                            <div class="date-info-popup popup">
+                                <p>Какой-то текст про дату</p>
+                            </div>
+                            <input id="date-input" name="date-input" class="input-main date-input" type="date" placeholder="01.04.2020">
+                        </div>
+                        <p class="phone-input-wrapper">
+                            <label class="phone-number" for="phone-input">Телефон</label>
+                            <input id="phone-input" name="phone-input" class="input-main phone-input" type="tel" placeholder="+7 800 999-00-00" required>
+                        </p>
+                        <div class="adress-input-wrapper">
+                            <div class="adress-title">
+                                <label class="adress" for="adress-input">Адрес</label>
+                                <button class="info-btn adress-info-btn" type="button"></button>
+                                    <div class="adress-info-popup popup">
+                                        <p>Введите название <br>
+                                            улицы, дома и квартиры</p>
+                                    </div>
+                            </div>
+                            <input id="adress-input" name="adress-input" class="input-main adress-input" type="text" placeholder="ул. Большая Конюшенная, 19/8">
+                        </div>
+                        <button type="submit" class="btn-primary pink-btn">
+                            <span class="pink-btn-text">Отправить</span>
+                        </button>
+                    </form>
+                </div>
+            </section>
         </main>
     
 </body>
