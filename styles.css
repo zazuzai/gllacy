@@ -244,7 +244,7 @@ body {
 
 .search-popup {
     position: absolute;
-
+    display: none;
     z-index: 1;
     top: 45px;
     right: 1%;
@@ -985,4 +985,52 @@ body {
     font-size: 12px;
     line-height: 16px;
     color: var(--font-color-dark);
+}
+
+/* catalog */
+
+.catalog-cards-wrapper {
+    margin-top: 100px;
+}
+
+.show-more-pgn-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.show-more {
+    margin: 0 auto;
+}
+
+.pgn-wrapper {
+    display: flex;
+}
+
+.cat-pgn {
+    display: flex;
+}
+
+.pgn-link, .pgn-item {
+    display: block;
+    width: 24px;
+    height: 24px;
+
+    font-size: 16px;
+    line-height: 20px;
+    
+}
+
+.pgn-prev {
+    background-image: url(img/catalog/pgn-btn.svg);
+    transform: rotate(180deg);
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+
+.pgn-next {
+    background-image: url(img/catalog/pgn-btn.svg);
+    background-repeat: no-repeat;
+    background-position: center;
 }
