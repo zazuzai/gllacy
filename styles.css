@@ -278,11 +278,14 @@ body {
     outline: none;
 }
 
-/* .header-search-input::-webkit-search-cancel-button {
+
+.header-search-input::-webkit-search-cancel-button {
     -webkit-appearance: none;
+
+
 }
 
-*/
+/*
 
 .header-search-input::-webkit-search-cancel-button::after {
     content: "";
@@ -292,6 +295,10 @@ body {
     background-image: url(/img/header/search-clear-btn.svg);
     background-position: center;
 }
+
+
+*/
+
 
 
 .login-link, .basket-link, .basket-full {
@@ -390,7 +397,7 @@ main {
 .slider-item {
     display: grid;
     grid-template-columns: 540px 350px 280px;
-    grid-template-rows: 1fr 25px;
+    
     padding-top: 40px;
     margin-bottom: var(--margin-bottom-ext);
     
@@ -665,7 +672,7 @@ main {
 .advantages-list {
     display: grid;
     grid-template-columns: repeat(2, 506px);
-    grid-template-rows: repeat(auto-fill, minmax(66px, 1fr));
+    
     column-gap: 30px;
     row-gap: 40px;
 
@@ -792,6 +799,7 @@ main {
     background-image: url(img/blog-background.jpg);
 }
 
+
 .blog-span {
     display: block;
     margin-bottom: 12px;
@@ -800,7 +808,7 @@ main {
     line-height: 20px;
 }
 
-.new-post {
+.post-title {
     color: var(--font-color-dark);
     font-size: 24px;
     line-height: 30px;
@@ -1386,10 +1394,12 @@ main {
 .filter-submit-btn:hover {
     background-color: #fcfcfc;
     border: solid 2px rgba(252, 252, 252, 0.3);
+    outline: none;
 }
 
 .filter-submit-btn:focus-visible {
     border: solid 2px #2d3440;
+    outline: none;
 }
 
 
@@ -1409,16 +1419,29 @@ main {
 .cat-pgn {
     display: flex;
     text-align: center;
+    column-gap: 10px;
 }
 
 .pgn-link, .pgn-item {
     display: block;
     width: 24px;
     height: 24px;
+    border-radius: 50%;
+    
 
     font-size: 16px;
     line-height: 20px;
     
+}
+
+.pgn-link:hover, .pgn-item:hover {
+    background-color: rgba(252, 252, 252, 0.3);
+    outline: 1px solid #fcfcfc;
+}
+
+.pgn-link:focus-visible, .pgn-item:focus-visible {
+    background-color: rgba(252, 252, 252, 0.3);
+    outline: 1px solid #2d3440;
 }
 
 .pgn-prev {
@@ -1427,6 +1450,16 @@ main {
     background-repeat: no-repeat;
     background-position: center;
 
+}
+
+.pgn-disabled {
+    opacity: 0.4;
+}
+
+.pgn-current {
+    display: block;
+    background-color: #fcfcfc;
+    
 }
 
 
