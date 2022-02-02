@@ -61,14 +61,15 @@
                                     <span class="login-span">Вход</span>
                                 </a>
                                 <div class="popup login-popup">
+                                    <h3 class="login-popup-title">Личный кабинет</h3>
                                     <form class="header-login" method="get" action="https://echo.htmlacademy.ru">
                                         <label for="header-login-input" class="visually-hidden">Введите логин.</label>
                                         <input class="header-login-input input-main" name="header-login-input" id="header-login-input" type="text" placeholder="email@example.com" required>
                                         <label for="header-password-input" class="visually-hidden">Введите пароль.</label>
                                         <input class="header-password-input input-main" name="header-password-input" id="header-password-input" type="password" required>
                                         <div class="login-btn-link-wrapper">
-                                            <button class="btn-primary pink-btn" type="submit">
-                                                <span class="btn-text">Войти</span>
+                                            <button class="pink-btn" type="submit">
+                                                <span>Войти</span>
                                             </button>
                                             <div class="header-help-link-wrapper">
                                                 <a class="login-inside-link" href="#">Забыли пароль?</a>
@@ -82,7 +83,43 @@
                                 <a class="navigation-user-link basket-full" href="#">
                                     <span class="basket-span">2 товара</span>
                                 </a>
-                                <div class="popup basket-popup"></div>
+                                <div class="popup basket-popup">
+                                    <h3 class="basket-popup-title">Корзина</h3>
+                                    <form class="basket-form">
+                                        <ul class="basket-items-list">
+                                            <li class="basket-item">
+                                                <a class="basket-product" href=#>
+                                                    <img class="basket-product-img" src="img/busket-popup/busket-item1.png" width="46" height="46">
+                                                    <span class="basket-item-name">Малинка</p>  
+                                                </a>
+                                                <span class="basket-item-price">310</span>
+                                                <span>₽</span>
+                                                <button class="basket-item-delete-button" type="button">
+                                                    <span class="visually-hidden">Удалить из корзины</span>
+                                                </button>
+                                            </li>
+                                            <li class="basket-item">
+                                                <a class="basket-product" href=#>
+                                                    <img class="basket-product-img" src="img/busket-popup/busket-item2.png" width="46" height="46">
+                                                    <span class="basket-item-name">Бабл-гам</p>
+                                                    <span class="basket-item-price">480</span>
+                                                    <span>₽</span>
+                                                </a>
+                                                <button class="basket-item-delete-button" type="button">
+                                                    <span class="visually-hidden">Удалить из корзины</span>
+                                                </button>
+                                            </li>
+                                        </ul>
+                                        <div class="submit-result-wrapper">
+                                            <button class="basket-submit-btn" type="submit">
+                                                <span>Офромить заказ</span>
+                                            </button>
+                                            <span class="basket-result">Итого:</span>
+                                            <span class="basket-result-summ">790</span>
+                                            <span>₽</span>
+                                        </div>
+                                    </form>
+                                </div>
                             </li>
                         </ul>
                     </div>
@@ -113,19 +150,18 @@
                             <option value="cheap">По цене (сначала дешёвые)</option>
                             <option value="expensive">По цене (сначала дорогие)</option>
                         </select>
-                        <div class="select-icon">
-                            <svg focusable="false" width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M1.80812 0.195262C1.54777 -0.0650874 1.12566 -0.0650874 0.865306 0.195262C0.604957 0.455612 0.604957 0.877722 0.865306 1.13807L5.52565 5.79842C5.52771 5.80053 5.52979 5.80264 5.53189 5.80474C5.66259 5.93543 5.83404 6.00052 6.00534 6C6.1753 5.9995 6.34511 5.93441 6.47478 5.80474C6.47687 5.80265 6.47894 5.80056 6.48099 5.79845L11.1414 1.13807C11.4017 0.877722 11.4017 0.455612 11.1414 0.195262C10.881 -0.0650874 10.4589 -0.0650874 10.1986 0.195262L6.00334 4.39048L1.80812 0.195262Z" fill="#2D3440"/>
-                            </svg>
-                        </div>
                         <button class="visually-hidden" type="submit">Отсортировать.</button>
                     </fieldset>
                     <fieldset class="catalog-filter-group price-group">
                         <legend class="catalog-filter-title">Цена:
-                            <span class="range-toggle-span toggle-min-span">100&nbsp;₽</span>
-                            <span class="range-toggle-span toggle-max-span">-&nbsp;500&nbsp;₽</span>
+                            <span class="range-toggle-span toggle-min-span min-price">100</span>
+                            <span class="range-toggle-span toggle-min-span">₽</span>
+                            <span class="range-toggle-span toggle-max-span max-price">-&nbsp;500</span>
+                            <span class="range-toggle-span toggle-max-span">₽</span>
                         </legend>
                         <div class="range">
+                            <input class="visually-hidden" name="min-price" id="min-price" type="number">
+                            <input class="visually-hidden" name="max-price" id="max-price" type="number">
                             <div class="range-scale">
                               <div class="range-bar">
                                 <button class="range-toggle toggle-min">
